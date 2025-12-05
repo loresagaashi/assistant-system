@@ -2,8 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 
+// Base URL for the Django backend API.
+// In production, we default to the deployed Render backend so things "just work"
+// even if NEXT_PUBLIC_API_BASE_URL is not set.
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000/api";
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://assistant-system.onrender.com/api";
 
 export default function HomePage() {
   const [sessions, setSessions] = useState([]);
