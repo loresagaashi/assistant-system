@@ -12,9 +12,12 @@ will call `ensure_personal_cv_document` which:
 """
 
 from typing import Optional
+import os
 
 
-# TODO: Paste your real CV / professional summary into this string.
+# Built‑in fallback CV / professional summary.
+# The assistant will prefer loading `resume.txt` from this directory if it
+# exists; otherwise it uses this string.
 PERSONAL_CV_TEXT: str = """
 Name: Loresa Gashi
 Role: Software & AI Developer
@@ -81,6 +84,29 @@ English – C1 (Listening, Reading, Speaking, Writing)
 """
 
 
+def _load_personal_cv_text() -> str:
+    """
+    Load personal CV text, preferring the external `resume.txt` file that lives
+    next to this module. If the file is missing or empty, fall back to the
+    built‑in `PERSONAL_CV_TEXT` string.
+    """
+    # Resolve path to `backend/assistant/api/resume.txt`
+    resume_path = os.path.join(os.path.dirname(__file__), "resume.txt")
+
+    file_text = ""
+    try:
+        with open(resume_path, "r", encoding="utf-8") as f:
+            file_text = f.read().strip()
+    except OSError:
+        # File does not exist or cannot be read; we'll fall back to the constant.
+        file_text = ""
+
+    if file_text:
+        return file_text
+
+    return (PERSONAL_CV_TEXT or "").strip()
+
+
 def ensure_personal_cv_document() -> Optional[int]:
     """
     Ensure that a `ProfessionalDocument` entry exists for the built‑in CV.
@@ -92,7 +118,8 @@ def ensure_personal_cv_document() -> Optional[int]:
     from .models import ProfessionalDocument
     from .memory import ensure_document_embedding
 
-    text = (PERSONAL_CV_TEXT or "").strip()
+    # Prefer the external resume file if available.
+    text = _load_personal_cv_text()
     if not text:
         # Nothing to seed – user has not customized the text yet.
         return None

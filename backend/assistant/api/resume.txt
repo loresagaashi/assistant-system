@@ -1,0 +1,104 @@
+==================================================
+                    RESUME
+==================================================
+
+LORESA GASHI
+Prishtina, Kosovo | Phone: (+383) 45 605 588 | Email: loresag17@gmail.com
+LinkedIn: linkedin.com/in/loresagashi | GitHub: github.com/loresagaashi
+
+--------------------------------------------------
+PROFESSIONAL SUMMARY
+--------------------------------------------------
+Software Developer with a strong sense of ownership and a passion for turning ideas into meaningful, real-world projects.
+Experienced in building full-stack web applications using Java Spring Boot, ReactJS, JavaScript, Python, PHP, and SQL.
+Combines hands-on development with teaching experience, guiding students through modern web and software technologies.
+Eager to contribute to collaborative teams, solve complex problems, and continuously grow in backend and frontend development.
+
+--------------------------------------------------
+KEY SKILLS
+--------------------------------------------------
+- Java, Java Spring (Spring Boot, Spring Security), Object-Oriented Programming
+- Web Development: HTML, CSS, JavaScript, React, Next.js, TypeScript, jQuery
+- Backend & APIs: REST, JSON, PHP, .NET, C#, Python, WordPress
+- Databases: SQL, MySQL, PostgreSQL, MongoDB, relational database design
+- Tools & Practices: GitHub, Postman, Agile (Scrum)
+
+--------------------------------------------------
+PROFESSIONAL EXPERIENCE
+--------------------------------------------------
+Junior General Tech Engineer & Instructor | Digital School | Prishtina, Kosovo
+Apr 2025 – Present
+- Develop curriculum and hands-on coding projects for beginner and intermediate students.
+- Teach programming in PHP and Python, as well as web development with HTML, CSS, and JavaScript.
+- Guide students in building web and software applications, providing continuous feedback and mentorship.
+- Assess student progress through code reviews, evaluations, and one-on-one mentoring.
+
+--------------------------------------------------
+PROJECTS
+--------------------------------------------------
+Learning Management and Student Information System | Tech stack: Java Spring Boot, ReactJS, PostgreSQL, MongoDB
+Developed a centralized platform to manage lectures, assignments, communication, and academic performance for students, professors, and administrators.
+- Implemented role-based access for students, professors, and administrators.
+- Enabled lecture publishing, assignment tracking, messaging, and performance monitoring.
+Link: github.com/loresagaashi/learning-management-system
+
+Food Ordering App | Tech stack: Java Spring Boot, ReactJS, MySQL
+Built a full-stack food ordering application supporting secure online payments, order tracking, and an admin dashboard.
+- Integrated Stripe for secure payment processing.
+- Implemented real-time order tracking and an admin dashboard for analytics and management.
+Link: github.com/loresagaashi/food-ordering-app
+
+Pet Adoption Platform | Tech stack: HTML, CSS, JavaScript, PHP
+Created a platform enabling admin-side pet registration and client-side adoption with categorized pets and detailed profiles.
+- Designed a user-friendly interface for browsing and adopting pets.
+- Implemented admin functionality for managing pet profiles and adoption status.
+Link: github.com/loresagaashi/PetAdoption
+
+--------------------------------------------------
+HONOURS & AWARDS
+--------------------------------------------------
+Erasmus+ ELEGANTS Program – Project Participant and Winner | Erasmus+ | Oct 2024
+- Selected for the E-Learning Gamified and Networked Training for Startuppers (ELEGANTS) program focused on innovation and entrepreneurship.
+- Contributed to "Voices of the Fallen", a digital memorial using QR codes and Augmented Reality (AR) to preserve and share stories of World War II martyrs.
+- Recognized as a program winner for innovative historical preservation and community engagement.
+Link: bit.ly/43OUhoc
+
+Hackathon Prizren – Digital Skills Festival | May 2024
+- Developed a full-stack Smart City project using React, JavaScript, and Python during a competitive hackathon.
+- Designed and implemented a real-time temperature management system to address urban challenges.
+- Collaborated with a team to create a scalable solution with responsive UI and efficient backend processing.
+Link: itp-prizren.com/digital-skills-festival-2/
+
+--------------------------------------------------
+EDUCATION
+--------------------------------------------------
+Computer Science and Engineering | University for Business and Technology | Prishtina, Kosovo
+Oct 2022 – Sep 2025
+- Coursework: Computer Science 1 & 2, Algorithms and Data Structures, Software Engineering,
+  Software System Design, Software Architecture, Database Systems, Fundamentals of Artificial Intelligence,
+  Computer Architecture and Organization, Mathematics 1 & 2.
+Website: ubt-uni.net/en/home
+
+--------------------------------------------------
+CERTIFICATIONS & TRAININGS
+--------------------------------------------------
+Web Application Developer Course | Beetroot Academy | Prishtina, Kosovo
+Sep 2023 – Feb 2024
+- Gained proficiency in ReactJS, JavaScript, HTML, and CSS.
+- Developed and integrated APIs into projects to enhance functionality and user experience.
+- Applied Scrum methodology to manage tasks and complete multiple small-scale projects.
+Link: bit.ly/beetroot_certifikatë
+
+Java Programming Course | Cacttus Education | Prishtina, Kosovo
+Mar 2022 – Jul 2022
+- Completed coursework in Java Fundamentals with consistently high assessment scores.
+- Gained hands-on experience with modern learning systems and technologies.
+- Engaged with a community of learners focused on programming and software development.
+Link: bit.ly/cacttus_certifikatë
+
+--------------------------------------------------
+LANGUAGES
+--------------------------------------------------
+- Albanian – Mother tongue (Native)
+- English – C1 (Proficient) in listening, reading, speaking, and writing
+
