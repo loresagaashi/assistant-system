@@ -43,10 +43,6 @@ SECRET_KEY = get_env_setting("DJANGO_SECRET_KEY", required=True)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = get_env_setting("DJANGO_DEBUG", "True").lower() == "true"
 
-ALLOWED_HOSTS = get_env_setting(
-    "DJANGO_ALLOWED_HOSTS",
-    "localhost,127.0.0.1",
-).split(",")
 
 # CORS configuration – only allow explicitly configured frontend origins.
 # Defaults cover common dev ports for React/Vite and Next.js.
