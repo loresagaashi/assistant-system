@@ -50,11 +50,8 @@ ALLOWED_HOSTS = get_env_setting(
 
 # CORS configuration – only allow explicitly configured frontend origins.
 # Defaults cover common dev ports for React/Vite and Next.js.
-CORS_ALLOWED_ORIGINS = get_env_setting(
-    "CORS_ALLOWED_ORIGINS",
-    "http://localhost:3000,http://127.0.0.1:3000,http://localhost:5173,http://127.0.0.1:5173",
-    "https://assistant-system.vercel.app/"
-).split(",")
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # OpenAI API key loaded from environment
 OPENAI_API_KEY = get_env_setting("OPENAI_API_KEY", default=None, required=False)
