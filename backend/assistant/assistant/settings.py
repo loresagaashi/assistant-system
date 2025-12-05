@@ -43,9 +43,15 @@ SECRET_KEY = get_env_setting("DJANGO_SECRET_KEY", required=True)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = get_env_setting("DJANGO_DEBUG", "True").lower() == "true"
 
+# Hosts that are allowed to serve this Django app. In production on Render we
+# usually configure this via the DJANGO_ALLOWED_HOSTS environment variable.
+ALLOWED_HOSTS = get_env_setting(
+    "DJANGO_ALLOWED_HOSTS",
+    "localhost,127.0.0.1,assistant-system.onrender.com,assistant-system.vercel.app",
+).split(",")
 
-# CORS configuration – only allow explicitly configured frontend origins.
-# Defaults cover common dev ports for React/Vite and Next.js.
+# CORS configuration – during development you can allow all origins.
+# For stricter production control, replace this with CORS_ALLOWED_ORIGINS.
 CORS_ALLOW_ALL_ORIGINS = True
 
 
