@@ -20,6 +20,12 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        # Ensure the `vector` type / pgvector extension exists before adding
+        # any VectorField columns. This is safe to run multiple times.
+        migrations.RunSQL(
+            sql="CREATE EXTENSION IF NOT EXISTS vector;",
+            reverse_sql="DROP EXTENSION IF EXISTS vector;",
+        ),
         # Drop old JSONB-based embedding columns
         migrations.RemoveField(
             model_name="memoryentry",
